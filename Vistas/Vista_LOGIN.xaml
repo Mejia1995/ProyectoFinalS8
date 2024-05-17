@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalS8.Vistas.Vista_LOGIN"
+             Title="Vista_LOGIN">
+    <VerticalStackLayout
+        Padding="11">
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="50"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+        <Label 
+            Padding="19"
+            Text="Ingreso al Sistema de Soporte "
+            TextColor="Green"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+          />
+        <Grid>
+            
+            <Grid.RowDefinitions>
+
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario"
+       TextColor="Blue"
+       Grid.Row="0"
+       Grid.Column="0"
+       VerticalTextAlignment="Center"
+       HorizontalTextAlignment="Center"
+                   Margin="10"/>
+
+            <Entry x:Name="UsernameEntry"      
+       Placeholder="Ingrese su Usuario"
+       Grid.Row="0"
+       Grid.Column="1"
+       VerticalTextAlignment="Start"
+        HorizontalTextAlignment="Start"
+                   Margin="10"
+       />
+
+            <Label Text="Contraseña"
+       TextColor="Blue"
+       Grid.Row="1"
+       Grid.Column="0"
+       VerticalTextAlignment="Start"
+       HorizontalTextAlignment="Center"
+                   Margin="10"/>
+
+
+            <Entry x:Name="PasswordEntry"        
+       Placeholder="Ingrese su Contraseña"
+       IsPassword="True"
+       Grid.Row="1"
+       Grid.Column="1"
+       VerticalTextAlignment="Start"
+       HorizontalTextAlignment="Start"
+                   Margin="10"
+                   
+   />
+
+            <Button x:Name="BtnIngresar"
+                Text="Ingresar"
+                Clicked="BtnIngresar_Clicked"
+                Grid.Row="2"
+                Grid.Column="0"
+                    Margin="10"
+                    Background="Gray"
+                    
+                    />
+            <Button x:Name="BtnRegistro"
+                    Text="Registro"
+                    Clicked="BtnRegistro_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="10"
+                    BackgroundColor="Gray"/>
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalS8.Vistas.Vista_Agregar"
+             Title="Vista_Agregar">
+    <VerticalStackLayout>
+        <Label 
+      Text="Crear Orden De Mantenimiento"
+      FontSize="25"
+      HorizontalTextAlignment="Center"
+      TextColor="Blue" />
+
+        <Entry x:Name="txtTrabajoSolicitado"  Placeholder="Trabajo Solicitado"/>
+
+        <Entry x:Name="txtEmpSolicitante" Placeholder="Empresa Solicitante"/>
+
+        <Entry x:Name="txtDepSolicitado"   Placeholder="Solicitado A"/>
+        
+        <Entry x:Name="txtFecha"   Placeholder="Fecha de Emision "/>
+
+        <Button x:Name="btnGuardar"
+        Text="Guardar Orden"
+                Clicked="btnGuardar_Clicked"
+                 Margin="30"
+                Background="Gray"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

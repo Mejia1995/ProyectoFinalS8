@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalS8.Vistas.Vista_REGISTRO"
+             Title="Vista_REGISTRO">
+    <VerticalStackLayout>
+        <Label 
+          Padding="19"
+          Text="Registro de Usuarios "
+          TextColor="Green"
+          FontSize="24"
+          HorizontalTextAlignment="Center"
+         />
+        <Grid>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario"
+    TextColor="Blue"
+    Grid.Row="0"
+    Grid.Column="0"
+    VerticalTextAlignment="Center"
+    HorizontalTextAlignment="Center"
+                Margin="10"/>
+
+            <Entry x:Name="txtusuario"      
+    Placeholder="Ingrese su Usuario"
+    Grid.Row="0"
+    Grid.Column="1"
+    VerticalTextAlignment="Start"
+     HorizontalTextAlignment="Start"
+                Margin="10"
+    />
+
+            <Label Text="Contraseña"
+    TextColor="Blue"
+    Grid.Row="1"
+    Grid.Column="0"
+    VerticalTextAlignment="Start"
+    HorizontalTextAlignment="Center"
+                Margin="10"/>
+
+
+            <Entry x:Name="txtcontraseña"        
+    Placeholder="Ingrese su Contraseña"
+    IsPassword="True"
+    Grid.Row="1"
+    Grid.Column="1"
+    VerticalTextAlignment="Start"
+    HorizontalTextAlignment="Start"
+                Margin="10"
+                
+/>
+
+
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

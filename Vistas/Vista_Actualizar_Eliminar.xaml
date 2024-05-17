@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalS8.Vistas.Vista_Actualizar_Eliminar"
+             Title="Vista_Actualizar_Eliminar">
+    <VerticalStackLayout>
+        <Label 
+     Text="Sistema de Mantenimiento"
+     FontSize="25"
+     HorizontalTextAlignment="Center"
+         TextColor="Blue" />
+
+        <Entry x:Name="txtCodigo"
+                IsReadOnly="True"/>
+
+        <Entry x:Name="txtTSolicitado"
+        Placeholder="Trabajo Solicitado"/>
+
+        <Entry x:Name="txtESolicitante"
+        Placeholder="Empresa Solicitante"/>
+
+
+        <Entry x:Name="txtDSolicitado"
+        Placeholder="Solicitado A"/>
+
+        <Entry x:Name="txtFecha"
+ Placeholder="Fecha de Emision"/>
+
+        <Button x:Name="btnActualizar"
+         Text="Actualizar Orden"
+               Clicked="btnActualizar_Clicked"
+                 Margin="20"
+ Background="Gray"/>
+
+        <Button x:Name="btnEliminar"
+                 Text="Eliminar Orden" 
+                     Clicked="btnEliminar_Clicked"
+                 Margin="20"
+ Background="Gray"/>
+
+    </VerticalStackLayout>
+</ContentPage>

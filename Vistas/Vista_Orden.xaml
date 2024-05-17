@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalS8.Vistas.Vista_Orden"
+             Title="Vista_Orden">
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Lista de Ordenes de Trabajo"
+            FontSize="24"
+            HorizontalTextAlignment="Center" 
+            TextColor="Red" Padding="20"/>
+        <Label Text="Detalles"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Codigo" TextColor="Blue" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Descripción" TextColor="Blue" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="Empresa Solicitante" TextColor="Blue" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="Solicitado_A" TextColor="Blue" Grid.Row="0" Grid.Column="3"/>
+            <Label Text="Fecha de Emision" TextColor="Blue" Grid.Row="0" Grid.Column="4"/> 
+        </Grid>
+        <ListView x:Name="listOrdenes" ItemSelected="listOrdenes_ItemSelected">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding ID_orden}" Grid.Column="0"/>
+                                <Label Text="{Binding TrabajoSolicitado}" Grid.Column="1"/>
+                                <Label Text="{Binding EmpresaSolicitante}" Grid.Column="2"/>
+                                <Label Text="{Binding DepartamentoSolicitado}" Grid.Column="3"/>
+                                <Label Text="{Binding Fecha}" Grid.Column="4"/>
+                            </Grid>
+
+                        </StackLayout>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <Button x:Name="btnAgregar"
+         Text="Nueva Orden"
+                Clicked="btnAgregar_Clicked"
+                Margin="30"
+                Background="Gray"/>
+
+    </VerticalStackLayout>
+</ContentPage>
