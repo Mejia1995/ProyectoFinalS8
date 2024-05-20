@@ -18,7 +18,8 @@ public partial class Vista_Agregar : ContentPage
             parametros.Add("TrabajoSolicitado", txtTrabajoSolicitado.Text);
             parametros.Add("EmpresaSolicitante", txtEmpSolicitante.Text);
             parametros.Add("DepartamentoSolicitado", txtDepSolicitado.Text);
-            parametros.Add("Fecha", txtFecha.Text);
+            String mostrarfecha = txtFecha.Date.ToString("yyyy-MM-dd");
+            parametros.Add("Fecha", mostrarfecha.ToString());
             cliente.UploadValues("http://192.168.18.17/sistemaOT/wsordenTrabajo.php", "POST", parametros);
             Navigation.PushAsync(new Vista_Orden());
         }

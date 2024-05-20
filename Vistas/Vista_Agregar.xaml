@@ -3,20 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_Agregar"
              Title="Vista_Agregar">
-    <VerticalStackLayout>
-        <Label 
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Background="#EAFAF1">
+            <Label 
       Text="Crear Orden De Mantenimiento"
       FontSize="25"
       HorizontalTextAlignment="Center"
-      TextColor="Blue" />
+     TextColor="#BA4A00"/>
 
-        <Entry x:Name="txtTrabajoSolicitado"  Placeholder="Trabajo Solicitado"/>
+            <Entry x:Name="txtTrabajoSolicitado"  Placeholder="Trabajo Solicitado"  Margin="10" BackgroundColor="#117A65"/>
 
-        <Entry x:Name="txtEmpSolicitante" Placeholder="Empresa Solicitante"/>
+            <Entry x:Name="txtEmpSolicitante" Placeholder="Empresa Solicitante" Margin="10" BackgroundColor="#117A65" />
 
-        <Entry x:Name="txtDepSolicitado"   Placeholder="Solicitado A"/>
-        
-        <Entry x:Name="txtFecha"   Placeholder="Fecha de Emision "/>
+            <Entry x:Name="txtDepSolicitado"   Placeholder="Solicitado A"  Margin="10" BackgroundColor="#117A65"/>
+
+        <Label Text="Fecha de Emision"  Margin="10" />
+        <DatePicker x:Name="txtFecha" Format="yyyy-MM-dd" Margin="10" BackgroundColor="Chocolate"/>
 
         <Button x:Name="btnGuardar"
         Text="Guardar Orden"
@@ -25,4 +27,5 @@
                 Background="Gray"/>
         
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

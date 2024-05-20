@@ -3,16 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_Orden"
              Title="Vista_Orden">
-    <VerticalStackLayout Padding="20">
-        <Label 
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Background="#EAFAF1" >
+            <Label 
             Text="Lista de Ordenes de Trabajo"
             FontSize="24"
             HorizontalTextAlignment="Center" 
-            TextColor="Red" Padding="20"/>
+            TextColor="#BA4A00" Padding="20"/>
         <Label Text="Detalles"/>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition />
+                <RowDefinition />   
 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -22,15 +23,15 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Codigo" TextColor="Blue" Grid.Row="0" Grid.Column="0"/>
-            <Label Text="Descripción" TextColor="Blue" Grid.Row="0" Grid.Column="1"/>
-            <Label Text="Empresa Solicitante" TextColor="Blue" Grid.Row="0" Grid.Column="2"/>
-            <Label Text="Solicitado_A" TextColor="Blue" Grid.Row="0" Grid.Column="3"/>
-            <Label Text="Fecha de Emision" TextColor="Blue" Grid.Row="0" Grid.Column="4"/> 
+                <Label Text="Codigo" TextColor="#117A65" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Descripción" TextColor="#117A65" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Empresa Solicitante" TextColor="#117A65" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Solicitado_A" TextColor="#117A65" Grid.Row="0" Grid.Column="3"/>
+                <Label Text="Fecha de Emision" TextColor="#117A65" Grid.Row="0" Grid.Column="4"/> 
         </Grid>
-        <ListView x:Name="listOrdenes" ItemSelected="listOrdenes_ItemSelected">
+            <ListView x:Name="listOrdenes" ItemSelected="listOrdenes_ItemSelected" Background="#D5D8DC" >
 
-            <ListView.ItemTemplate>
+                <ListView.ItemTemplate>
 
                 <DataTemplate>
                     <ViewCell>
@@ -66,4 +67,5 @@
                 Background="Gray"/>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -3,72 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_REGISTRO"
              Title="Vista_REGISTRO">
-    <VerticalStackLayout>
-        <Label 
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Background="#EAFAF1">
+            <Label 
           Padding="19"
           Text="Registro de Usuarios "
-          TextColor="Green"
+          TextColor="#BA4A00"
           FontSize="24"
           HorizontalTextAlignment="Center"
          />
         <Grid>
-
+            
             <Grid.RowDefinitions>
-
-                <RowDefinition />
-                <RowDefinition/>
-                <RowDefinition />
-
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-
-                <ColumnDefinition/>
-                <ColumnDefinition/>
                 
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
 
-            </Grid.ColumnDefinitions>
-
-            <Label Text="Usuario"
-    TextColor="Blue"
-    Grid.Row="0"
-    Grid.Column="0"
-    VerticalTextAlignment="Center"
-    HorizontalTextAlignment="Center"
-                Margin="10"/>
-
-            <Entry x:Name="txtusuario"      
-    Placeholder="Ingrese su Usuario"
-    Grid.Row="0"
-    Grid.Column="1"
-    VerticalTextAlignment="Start"
-     HorizontalTextAlignment="Start"
-                Margin="10"
-    />
-
-            <Label Text="Contraseña"
-    TextColor="Blue"
-    Grid.Row="1"
-    Grid.Column="0"
-    VerticalTextAlignment="Start"
-    HorizontalTextAlignment="Center"
-                Margin="10"/>
+                </Grid.RowDefinitions>
 
 
-            <Entry x:Name="txtcontraseña"        
-    Placeholder="Ingrese su Contraseña"
-    IsPassword="True"
-    Grid.Row="1"
-    Grid.Column="1"
-    VerticalTextAlignment="Start"
-    HorizontalTextAlignment="Start"
-                Margin="10"
+                <Label Text="Nombre" TextColor="#1C2833" Grid.Row="0"    VerticalTextAlignment="Center" />
+
+                <Entry x:Name="txtNombre" Placeholder="Ingrese su Nombre" Grid.Row="1"  HorizontalTextAlignment="Start"  Margin="10 "  />
+
+                <Label Text="Apellido" TextColor="#1C2833" Grid.Row="2"/>
+
+                <Entry x:Name="txtApellido"  Placeholder="Ingrese su Apellido"  Grid.Row="3"  HorizontalTextAlignment="Start" Margin="10" />
+
+                <Label Text="Email" TextColor="#1C2833" Grid.Row="4"/>
+
+                <Entry x:Name="txtEmail"  Placeholder="Ingrese suEmail" Grid.Row="5" Margin="10" />
+
+                <Label Text="Password" TextColor="#1C2833" Grid.Row="6" />
+
+                <Entry x:Name="txtPassword"  Placeholder="Ingrese su Password" IsPassword="True" Grid.Row="7" HorizontalTextAlignment="Start" Margin="10" />
                 
-/>
+            
+                 <Label Text="Departamento" TextColor="#1C2833" Grid.Row="8" />
 
+                <Entry x:Name="txtDepart"  Placeholder="Ingrese su Departamento"  Grid.Row="9" HorizontalTextAlignment="Start" Margin="10" />
 
+            </Grid>
 
-        </Grid>
+            <Button x:Name="BtnGuardarRegistro"
+                   Text="Guardar Usuario"
+                Clicked="BtnGuardarRegistro_Clicked" Margin="10" Background="Gray" />
 
-    </VerticalStackLayout>
+            <Button x:Name="BtnTomarFoto" Text="Tomar Foto" Clicked="BtnTomarFoto_Clicked" Margin="10" Background="Gray"/>
+            <Image x:Name="imgFoto" HeightRequest="200" VerticalOptions="CenterAndExpand" />
+
+        </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

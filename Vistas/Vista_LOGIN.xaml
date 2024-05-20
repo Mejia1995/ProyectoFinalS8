@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_LOGIN"
              Title="Vista_LOGIN">
-    <VerticalStackLayout
+    <VerticalStackLayout Background="#EAFAF1"
         Padding="11">
         <Image
             Source="dotnet_bot.png"
@@ -35,16 +35,16 @@
 
             </Grid.ColumnDefinitions>
 
-            <Label Text="Usuario"
-       TextColor="Blue"
+            <Label Text="Email"
+       TextColor="#34495E"
        Grid.Row="0"
        Grid.Column="0"
        VerticalTextAlignment="Center"
        HorizontalTextAlignment="Center"
                    Margin="10"/>
 
-            <Entry x:Name="UsernameEntry"      
-       Placeholder="Ingrese su Usuario"
+            <Entry x:Name="txtEmail"      
+       Placeholder="Ingrese su Email"
        Grid.Row="0"
        Grid.Column="1"
        VerticalTextAlignment="Start"
@@ -52,16 +52,16 @@
                    Margin="10"
        />
 
-            <Label Text="Contraseña"
-       TextColor="Blue"
+            <Label Text="Password"
+       
        Grid.Row="1"
        Grid.Column="0"
        VerticalTextAlignment="Start"
-       HorizontalTextAlignment="Center"
+       HorizontalTextAlignment="Center" TextColor="#34495E"
                    Margin="10"/>
 
 
-            <Entry x:Name="PasswordEntry"        
+            <Entry x:Name="txtPassword"        
        Placeholder="Ingrese su Contraseña"
        IsPassword="True"
        Grid.Row="1"
