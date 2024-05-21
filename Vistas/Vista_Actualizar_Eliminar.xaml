@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_Actualizar_Eliminar"
-             Title="Vista_Actualizar_Eliminar">
+             Title="SOMEDICA">
     <ScrollView>
         <VerticalStackLayout Padding="20" Background="#EAFAF1">
             <Label 
@@ -10,25 +10,28 @@
      FontSize="25"
      HorizontalTextAlignment="Center"
         TextColor="#BA4A00" />
+            <Label Text="Codigo" />
 
-        <Entry x:Name="txtCodigo"
+            <Entry x:Name="txtCodigo"
                 IsReadOnly="True" Margin="10" BackgroundColor="#7DCEA0"/>
+            
+            <Label Text="Descripcion" />
+            <Entry x:Name="txtTSolicitado"
+            Placeholder="Trabajo Solicitado" Margin="10" BackgroundColor="#7DCEA0"/>
+            
+            <Label Text="Area Solicitante" />
+            <Entry x:Name="txtESolicitante"
+            Placeholder="Area Solicitante"  Margin="10" BackgroundColor="#7DCEA0"/>
 
-        <Entry x:Name="txtTSolicitado"
-        Placeholder="Trabajo Solicitado" Margin="10" BackgroundColor="#7DCEA0"/>
-
-        <Entry x:Name="txtESolicitante"
-        Placeholder="Empresa Solicitante"  Margin="10" BackgroundColor="#7DCEA0"/>
-
-
-        <Entry x:Name="txtDSolicitado"
-        Placeholder="Solicitado A" Margin="10" BackgroundColor="#7DCEA0"/>
-        
-        <Label Text="Fecha de Emision"  Margin="10" />
+            <Label Text="Solicitado_A" />
+            <Entry x:Name="txtDSolicitado"
+             Placeholder="Solicitado A" Margin="10" BackgroundColor="#7DCEA0"/>
+            
+            <Label Text="Fecha de Emision"  Margin="10" />
             <DatePicker x:Name="txtFecha" Format="yyyy-MM-dd" Margin="10" BackgroundColor="Chocolate"/>
 
             <Button x:Name="btnActualizar"
-         Text="Actualizar Orden"
+                Text="Actualizar Orden"
                Clicked="btnActualizar_Clicked"
                  Margin="10" 
  Background="Gray"/>

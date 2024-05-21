@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_Orden"
-             Title="Vista_Orden">
+             Title="SOMEDICA">
     <ScrollView>
         <VerticalStackLayout Padding="20" Background="#EAFAF1" >
             <Label 
@@ -65,7 +65,12 @@
                 Clicked="btnAgregar_Clicked"
                 Margin="30"
                 Background="Gray"/>
+            
+            <Button x:Name="BtnInicio"
+                    Text="Inicio"
+                    Clicked="BtnInicio_Clicked"  Margin="30" Background="Gray"/>
 
-    </VerticalStackLayout>
+
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

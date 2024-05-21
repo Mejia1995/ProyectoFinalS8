@@ -35,4 +35,9 @@ public partial class Vista_Orden : ContentPage
         var objEstudiante = (CrearOrden)e.SelectedItem;
         Navigation.PushAsync(new Vista_Actualizar_Eliminar(objEstudiante));
     }
+
+    private void BtnInicio_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Vista_LOGIN());
+    }
 }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinalS8.Vistas.Vista_LOGIN"
-             Title="Vista_LOGIN">
+             Title="SOMEDICA">
     <VerticalStackLayout Background="#EAFAF1"
         Padding="11">
         <Image
@@ -35,57 +35,30 @@
 
             </Grid.ColumnDefinitions>
 
-            <Label Text="Email"
-       TextColor="#34495E"
-       Grid.Row="0"
-       Grid.Column="0"
-       VerticalTextAlignment="Center"
-       HorizontalTextAlignment="Center"
+            <Label Text="Email" TextColor="#34495E" Grid.Row="0" Grid.Column="0"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"
                    Margin="10"/>
 
-            <Entry x:Name="txtEmail"      
-       Placeholder="Ingrese su Email"
-       Grid.Row="0"
-       Grid.Column="1"
-       VerticalTextAlignment="Start"
+            <Entry x:Name="txtEmail"  Placeholder="Ingrese su Email" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Start"
         HorizontalTextAlignment="Start"
                    Margin="10"
        />
 
-            <Label Text="Password"
-       
-       Grid.Row="1"
-       Grid.Column="0"
-       VerticalTextAlignment="Start"
-       HorizontalTextAlignment="Center" TextColor="#34495E"
+            <Label Text="Password" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Start" HorizontalTextAlignment="Center" TextColor="#34495E"
                    Margin="10"/>
 
 
-            <Entry x:Name="txtPassword"        
-       Placeholder="Ingrese su Contraseña"
-       IsPassword="True"
-       Grid.Row="1"
-       Grid.Column="1"
-       VerticalTextAlignment="Start"
+            <Entry x:Name="txtPassword" Placeholder="Ingrese su Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Start"
        HorizontalTextAlignment="Start"
                    Margin="10"
                    
    />
 
-            <Button x:Name="BtnIngresar"
-                Text="Ingresar"
-                Clicked="BtnIngresar_Clicked"
-                Grid.Row="2"
-                Grid.Column="0"
+            <Button x:Name="BtnIngresar" Text="Ingresar" Clicked="BtnIngresar_Clicked" Grid.Row="2" Grid.Column="0"
                     Margin="10"
                     Background="Gray"
                     
                     />
-            <Button x:Name="BtnRegistro"
-                    Text="Registro"
-                    Clicked="BtnRegistro_Clicked"
-                    Grid.Row="2"
-                    Grid.Column="1"
+            <Button x:Name="BtnRegistro" Text="Registro" Clicked="BtnRegistro_Clicked" Grid.Row="2" Grid.Column="1"
                     Margin="10"
                     BackgroundColor="Gray"/>
 
